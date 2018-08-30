@@ -37,6 +37,7 @@ Group 3: Lotte
 
 #### Volumental Design guidelines
 
+https://imgur.com/a/s2aNSlB
 
 Potential assets needed: 
 
@@ -74,7 +75,7 @@ When you do encounter a conflict, don't panic! Follow the [steps here](https://g
 
 ---
 
-### BOOM: Success!
+###  💥 BOOM: Success!
 
 After completing this project, you should be comfortable with working as a team in a web project, know how to build a responsive webpage from scratch, build modules you can typically find on any webpage, like responsive menu, grid sections, hero images and footer.
 

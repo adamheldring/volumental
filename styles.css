@@ -10,7 +10,7 @@
   /* grid-template-columns: 16% 16% 16% 16% 16% 16%; */
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   /* grid-template-rows: repeat(auto-fit, minmax(140px, 1fr)); */
-  grid-template-rows: 817px 400px 40px; 
+  grid-template-rows: 817px 300px 300px 300px 300px 300px;
   grid-gap: 20px;
   padding: 0px;
   min-height: 0;
@@ -37,22 +37,22 @@
 /* Hero */
 #grid-item1 {
   grid-column: 1 / span 6;
-  grid-row: 1 / span 10;
+  grid-row: 1 / span 1;
 }
 /* Lotte */
 #grid-item2 {
   grid-column: 2 / span 2;
-  grid-row: 11 / span 10;
+  grid-row: 2 / span 1;
 }
 /* Info and link */
 #grid-item3 {
   grid-column: 4 / span 2;
-  grid-row: 11 / span 10;
+  grid-row: 2 / span 1;
 }
 /* Img */
 #grid-item4 {
   grid-column: 2 / span 2;
-  grid-row: 21 / span 10;
+  grid-row: 3 / span 1;
   background-image: url(CI10.jpg);
   /* object-fit: cover; */
   background-size: cover;
@@ -71,47 +71,47 @@
 /* Img */
 #grid-item5 {
   grid-column: 4 / span 1;
-  grid-row: 26 / 31;
+  grid-row: 3 / span 1;
 }
 /* Img */
 #grid-item6 {
   grid-column: 3 / span 1;
-  grid-row: 31 / 36;
+  grid-row: 4 / span 1;
 }
 /* Img */
 #grid-item7 {
   grid-column: 4 / span 2;
-  grid-row: 31 / 41;
+  grid-row: 4 / span 1;
 
 }
 /* Img */
 #grid-item8 {
   grid-column: 3 / span 1;
-  grid-row: 41 / 46;
+  grid-row: 5 / span 1;
 
 }
 /* Img */
 #grid-item9 {
   grid-column: 4 / span 1;
-  grid-row: 41 / 46;
+  grid-row: 5 / span 1;
 
 }
 
 /* Map */
 #grid-item10 {
   grid-column: 1 / span 6;
-  grid-row: 46 / 56;
+  grid-row: 6 / span 1;
 
 }
 /* Press */
 #grid-item11 {
   grid-column: 1 / span 6;
-  grid-row: 56 / 66;
+  grid-row: 7 / span 1;
 
 }
 /* Footer */
 #grid-item12 {
   grid-column: 1 / span 6;
-  grid-row: 66 / 76;
+  grid-row: 8 / span 1;
 
 }

@@ -38,7 +38,6 @@ p {
 
 .grid-container {
   display: grid;
-  background-color: pink;
   display: grid;
   max-width: 992px;
   margin-left: auto;

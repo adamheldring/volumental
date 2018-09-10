@@ -6,11 +6,14 @@ window.onload = function() {
   var scrollPosition;
 
   function transformHero(e) {
-    scrollPosition = parseInt(document.documentElement.scrollTop);
+    heroHeight = hero.height + 50;
+    scrollPosition = document.scrollingElement.scrollTop;
     if (scrollPosition < heroHeight) {
       hero.style.opacity = 1 - (scrollPosition / heroHeight);
     }
   }
-  document.addEventListener('scroll', transformHero)
-  transformHero();
+
+  document.addEventListener('scroll', transformHero) //runs transformhero on scroll
+  window.addEventListener('resize', transformHero) //runs transfomrhero on resize
+  transformHero(); //runs tranformhero on load and re-load
 }

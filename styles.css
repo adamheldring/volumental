@@ -19,6 +19,23 @@
     opacity: 1;
   }
 
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 600px;
+  letter-spacing: 7px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 26px;
+  line-height: 1.5;
+  word-spacing: 5px;
+  letter-spacing: 1.6px;
+}
+
 .grid-container {
   display: grid;
   background-color: pink;
@@ -47,7 +64,7 @@
 } */
 
 .logo img {
-  width: 100%;
+  width: 70%;
   object-fit: contain;
 }
 
@@ -91,4 +108,44 @@
 
 .press {
   grid-area: press;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "logo logo"
+    "info info"
+    "scanner woman"
+    "poster tablet"
+    "map map"
+    "press press";
+    grid-gap: 10px;
+    padding: 0px;
+    min-height: 0;
+    min-width: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "logo"
+    "info"
+    "scanner"
+    "woman"
+    "poster"
+    "tablet"
+    "map"
+    "map"
+    "press"
+    "press";
+    grid-gap: 10px;
+    padding: 0px;
+    min-height: 0;
+    min-width: 0;
+  }
 }

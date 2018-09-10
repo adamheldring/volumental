@@ -12,12 +12,22 @@
 }
 
 .hero-section img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  #hero-image img {
-    opacity: 1;
-  }
+#hero-image img {
+  opacity: 1;
+}
+#hero-image-container {
+  background: lightgrey;
+  background-image: url("./images/CI22.jpg");
+
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 812px;
+}
+
 
 h3 {
   font-family: 'Lato', sans-serif;

@@ -3,8 +3,63 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+.header {
+  width: 100%;
+  /* padding: 11px 90px 11px 90px; */
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  z-index: 10;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.navbar li {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding-right: 25px;
+  padding-left: 30px;
+  text-decoration: none;
+  text-decoration-style: solid;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 26px;
+  line-height: 1.5;
+  letter-spacing: 2.8px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar img {
+    width: 95px;
+    display: inline;
+    float: left;
+    padding-left: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 #container {
   overflow: auto;
+  z-index: 1;
 }
 
 .hero-section {
@@ -12,33 +67,90 @@
 }
 
 .hero-section img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  #hero-image img {
-    opacity: 1;
-  }
+#hero-image img {
+  opacity: 1;
+}
+#hero-image-container {
+  background: lightgrey;
+  background-image: url("./images/CI22.jpg");
 
-h3 {
-  font-family: 'Lato', sans-serif;
-  font-size: 30px;
-  font-weight: 600px;
-  letter-spacing: 7px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 812px;
+}
+
+
+.footer a {
+  text-decoration: none;
+  color: black;
 }
 
 p {
-  font-family: 'Lato', sans-serif;
   font-size: 13px;
-  font-weight: normal;
-  line-height: 26px;
+  font-weight: 300;
   line-height: 1.5;
   word-spacing: 5px;
   letter-spacing: 1.6px;
+  text-align: center;
+  color: #333333;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600px;
+  letter-spacing: 7px;
+  text-align: center;
+  color: #333333;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 600px;
+  line-height: 30px;
+  letter-spacing: 5px;
+}
+
+/* .header {
+  position: fixed;
+  padding: 11px 0px 11px;
+  top: 0px;
+  left: 0px;
+  background: white;
+  padding: 11px 90px 11px;
+  width: 100%;
+  z-index: 1000;
+} */
+
+.footer-section {
+  border-top: solid 1px black;
+  margin: 0px;
+  padding: 15px 0 0;
+  height: 225px;
+  clear: both;
+  position: static;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2.3px;
+  text-align: center;
+  display: block;
+}
+
+.footer_menu {
+  line-height: 25px;
+  margin: 15px;
 }
 
 .grid-container {
   display: grid;
-  background-color: pink;
+  /* background-color: pink; */
   display: grid;
   max-width: 992px;
   margin-left: auto;
@@ -46,7 +158,8 @@ p {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-  "logo logo info info"
+  "logo logo logo logo"
+  "info info info info"
   "scanner scanner . ."
   "scanner scanner woman ."
   ". poster tablet tablet"
@@ -63,8 +176,12 @@ p {
   object-fit: contain;
 } */
 
+.logo {
+  text-align: center;
+}
+
 .logo img {
-  width: 70%;
+  width: 60%;
   object-fit: contain;
 }
 
@@ -72,9 +189,9 @@ p {
   grid-area: info;
 }
 
-.info p {
+/* .info p {
   font-size: 1em;
-}
+} */
 
 .scanner {
   grid-area: scanner;
@@ -147,5 +264,12 @@ p {
     padding: 0px;
     min-height: 0;
     min-width: 0;
+  }
+  .footer-section {
+    text-transform: uppercase;
+  }
+.footer_menu {
+    display: block;
+    margin: 0px;
   }
 }

@@ -1,41 +1,54 @@
 /* OUR TEAM 3 STYLE FOR VOLUMENTAL LOTTE */
-
-body {
-  margin-top: 70px;
-  margin-left: 55px;
-  margin-right: 55px;
+* {
+  box-sizing: border-box;
 }
 
-.hero-section img{
-    max-width: 100%;
+#container {
+  overflow: auto;
 }
-.main-container {
-  margin: 150px 55px 400px;
 
+.hero-section {
+  margin: 70px 55px 120px;
 }
+
+.hero-section img {
+    width: 100%;
+  }
+
+  #hero img{
+    opacity: 1;
+  }
+
 .grid-container {
+  display: grid;
   background-color: pink;
   display: grid;
   max-width: 992px;
   margin-left: auto;
   margin-right: auto;
-  grid-template-columns: 233px 233px 233px 233px;
-  /* grid-template-columns: repeat(auto-fit, minmax(188px, 1fr)); */
-  /* grid-template-rows: repeat(auto-fit, minmax(140px, 1fr)); */
-  grid-template-rows: 300px 150px 150px 150px 150px 150px 150px 150px 300px 300px;
-  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+  "logo logo info info"
+  "scanner scanner . ."
+  "scanner scanner woman ."
+  ". poster tablet tablet"
+  ". . tablet tablet"
+  "map map map map"
+  "press press press press";
+  grid-gap: 10px;
   padding: 0px;
   min-height: 0;
   min-width: 0;
 }
 
-.grid-item {
+/* .grid-item {
   background-color: grey;
   word-wrap: break-word;
   min-height: 0;
   min-width: 0;
-  /* grid-auto-rows: min-content; */
-}
+  /* grid-auto-rows: min-content;
+} */
 
 /* .img-item {
   background-color: grey;
@@ -45,79 +58,54 @@ body {
   grid-auto-rows: min-content;
 } */
 
-.grid-item img {
+.logo {
   width: 100%;
+  object-fit: contain;
+}
+
+.logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.info {
+  grid-area: info;
+}
+
+.info p {
+  font-size: 1em;
+}
+
+.scanner {
+  grid-area: scanner;
+}
+
+.woman {
+  grid-area: woman;
+}
+
+.poster {
+  grid-area: poster;
+}
+
+.tablet {
+  grid-area: tablet;
+}
+
+.img-item {
+  filter: grayscale(30%);
+  object-fit: cover
+}
+
+.img-item img {
+  widht: 100%;
   height: 100%;
-  /* max-height: 100%; */
-
 }
 
-/* Lotte */
-#grid-item2 {
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 1;
-}
-/* Info and link */
-#grid-item3 {
-  grid-column: 3 / span 2;
-  grid-row: 1 / span 1;
-}
-/* Img */
-#grid-item4 {
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 2;
-
-  /* background-image: url(CI10.jpg);
-  background-size: cover;
-  background-position: center; */
-
-}
-/* img {
-   width: 100%;
- } */
-/* #Img1 {
-    width: 300px;
-    height: 200px;
-    opacity: 0.3;
-} */
-/* Img */
-#grid-item5 {
-  grid-column: 3 / span 1;
-  grid-row: 3 / span 1;
-}
-/* Img */
-#grid-item6 {
-  grid-column: 2 / span 1;
-  grid-row: 4 / span 1;
-}
-/* Img */
-#grid-item7 {
-  grid-column: 3 / span 2;
-  grid-row: 4 / span 2;
-
-}
-/* Img */
-#grid-item8 {
-  grid-column: 3 / span 1;
-  grid-row: 5 / span 1;
-
-}
-/* Img */
-#grid-item9 {
-  grid-column: 4 / span 1;
-  grid-row: 5 / span 1;
-
+.map {
+  grid-area: map;
 }
 
-/* Map */
-#grid-item10 {
-  grid-column: 1 / span 4;
-  grid-row: 6 / span 1;
-
-}
-/* Press */
-#grid-item11 {
-  grid-column: 1 / span 4;
-  grid-row: 7 / span 1;
-
+.press {
+  grid-area: press;
 }

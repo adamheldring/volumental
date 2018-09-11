@@ -118,6 +118,7 @@ h4 {
   "scanner scanner woman ."
   ". poster tablet tablet"
   ". . tablet tablet"
+  "mapheader mapheader mapheader mapheader"
   "mapbox mapbox mapbox mapbox"
   "press press press press";
   grid-gap: 10px;
@@ -176,6 +177,11 @@ h4 {
   height: 400px;
   filter: grayscale();
 }
+.mapheader {
+  grid-area: mapheader;
+  /* background: green; */
+}
+
 .press {
   grid-area: press;
 }
@@ -252,6 +258,7 @@ input[type=text], input[type=submit], input[type=button] {
     "info info"
     "scanner woman"
     "poster tablet"
+    "mapheader mapheader"
     "mapbox mapbox"
     "press press";
     grid-gap: 10px;
@@ -287,12 +294,13 @@ input[type=text], input[type=submit], input[type=button] {
     grid-template-areas:
     "logo"
     "info"
+    "mapheader"
+    "mapbox"
+    "mapbox"
     "scanner"
-    "woman"
-    "poster"
+    /* "woman" */
+    /* "poster" */
     "tablet"
-    "mapbox"
-    "mapbox"
     "press"
     "press";
     grid-gap: 10px;
@@ -309,5 +317,11 @@ input[type=text], input[type=submit], input[type=button] {
   .footermenu_item {
     display: block;
     margin: 0px;
+  }
+  .woman {
+    display: none;
+  }
+  .poster {
+    display: none;
   }
 }

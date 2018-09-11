@@ -245,6 +245,9 @@ h4 {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .hero-section {
+    margin: 70px 10px 120px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -266,6 +269,9 @@ h4 {
     padding: 0px;
     min-height: 0;
     min-width: 0;
+  }
+  .hero-section {
+    margin: 70px 10px 120px;
   }
   .footer-section {
     text-transform: uppercase;

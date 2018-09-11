@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="styles.css">
     <script src="lotteScript.js" type="text/javascript" > </script>
+    <script src="formFunction.js" type="text/javascript" > </script>
     <title>Team 3 - Sprint 1 - Lotte / Volumental</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -72,13 +73,19 @@
           <a class="footermenu_item" href="https://www.linkedin.com/company/volumental/" target="_blank">LinkedIn</a>
           <a class="footermenu_item" href="https://www.volumental.com/legal/">Terms of use</a>
       </div>
-      <p>Sign up for our newsletter to get the latest on our new projects</p>
-      <i class="fas fa-plus"></i>
-      <form>
-      <input type="text" name="name" value="Name">
-      <input type="text" name="email" value="E-mail">
-      <input type="submit" value="Submit">
-      </form>
+      <p>Sign up for our newsletter to get the latest on our new projects
+        <button id="plus" onclick="formReveal()">
+          <i class="fas fa-plus"></i>
+        </button>
+        <button id="minus" onclick="formHide()">
+          <i class="fas fa-minus"></i>
+        </button>
+      </p>
+        <form id="form">
+        <input type="text" name="name" value="Name">
+        <input type="text" name="email" value="E-mail">
+        <input type="submit" value="Submit">
+        </form>
     </section>
   </body>
 </html>

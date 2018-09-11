@@ -198,6 +198,11 @@ h4 {
   display: block;
 }
 
+.footer-section button {
+  border: none;
+  background-color: white;
+}
+
 .footermenu_item {
   line-height: 25px;
   margin: 15px;
@@ -218,6 +223,18 @@ input[type=text], input[type=submit] {
     padding: 10px;
     background-color: white;
     text-align: left;
+}
+
+#form {
+  display: none;
+}
+
+#plus {
+  display: inline;
+}
+
+#minus {
+  display: none;
 }
 
 @media screen and (min-width: 750px) and (max-width: 1000px) {

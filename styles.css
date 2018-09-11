@@ -100,45 +100,6 @@ h4 {
   letter-spacing: 5px;
 }
 
-/* .header {
-  position: fixed;
-  padding: 11px 0px 11px;
-  top: 0px;
-  left: 0px;
-  background: white;
-  padding: 11px 90px 11px;
-  width: 100%;
-  z-index: 1000;
-} */
-
-.footer a {
-  text-decoration: none;
-  color: black;
-}
-
-.footer-section {
-  border-top: solid 1px black;
-  margin: 0px;
-  padding: 15px 0 0;
-  height: 225px;
-  /* clear: both; */
-  position: relative;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 2.3px;
-  text-align: center;
-  display: block;
-}
-
-.footermenu_item {
-  line-height: 25px;
-  margin: 15px;
-}
-
 .grid-container {
   display: grid;
   max-width: 992px;
@@ -209,6 +170,51 @@ h4 {
   grid-area: press;
 }
 
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-section {
+  border-top: solid 1px black;
+  margin: 0px;
+  padding: 15px 0 0;
+  height: 225px;
+  /* clear: both; */
+  position: relative;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2.3px;
+  text-align: center;
+  display: block;
+}
+
+.footermenu_item {
+  line-height: 25px;
+  margin: 15px;
+}
+
+input[type=text], input[type=submit] {
+    width: 160px;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1.6px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    text-align: left;
+}
+
 @media screen and (min-width: 750px) and (max-width: 1000px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
@@ -257,7 +263,7 @@ h4 {
   .hero-section {
     margin: 70px 10px 120px;
 }
-  .footer-section {
+  .footer {
     text-transform: uppercase;
 }
   .footermenu_item {

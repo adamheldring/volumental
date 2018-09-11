@@ -25,16 +25,11 @@ html {
 .navbar li {
   float: right;
   display: block;
-  color: black;
   text-align: center;
   padding-right: 25px;
   padding-left: 30px;
-  text-decoration: none;
-  text-decoration-style: solid;
-  font-family: 'Lato', sans-serif;
   font-size: 13px;
   font-weight: 500;
-  line-height: 26px;
   line-height: 1.5;
   letter-spacing: 2.8px;
 }
@@ -70,32 +65,15 @@ html {
   width: 100%;
 }
 
-#hero-image img {
-  opacity: 1;
-}
-
 #hero-image-container {
   background: lightgrey;
-  background-image: url("./images/CI22.jpg");
-}
-
-#hero-image img {
-  opacity: 1;
-}
-
-#hero-image-container {
-  background: lightgrey;
-  background-image: url("./images/CI22.jpg");
+  background-image: url("./images/heroimage.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 812px;
 }
 
-.footer a {
-  text-decoration: none;
-  color: black;
-}
 
 p {
   font-size: 13px;
@@ -133,13 +111,18 @@ h4 {
   z-index: 1000;
 } */
 
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
 .footer-section {
   border-top: solid 1px black;
   margin: 0px;
   padding: 15px 0 0;
   height: 225px;
-  clear: both;
-  position: static;
+  /* clear: both; */
+  position: relative;
   bottom: 0px;
   left: 0;
   right: 0;
@@ -151,7 +134,7 @@ h4 {
   display: block;
 }
 
-.footer_menu {
+.footermenu_item {
   line-height: 25px;
   margin: 15px;
 }
@@ -270,15 +253,14 @@ h4 {
     padding: 0px;
     min-height: 0;
     min-width: 0;
-  }
+}
   .hero-section {
     margin: 70px 10px 120px;
-  }
+}
   .footer-section {
     text-transform: uppercase;
-  }
-
-  .footer_menu {
+}
+  .footermenu_item {
     display: block;
     margin: 0px;
   }

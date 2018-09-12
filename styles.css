@@ -427,9 +427,10 @@ input[type=text], input[type=submit], input[type=button] {
 }
 .navbar.responsive ul {
   background: white;
-  /* background: rgba(0,0,0,0.5); */
   position: fixed;
-  display: block;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
   margin: 0px;
   top: 70px;
   bottom: 0px;;
@@ -445,8 +446,6 @@ input[type=text], input[type=submit], input[type=button] {
 .navbar.responsive li {
   float: none;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   margin-right: 10px;
   padding-top: 20px;
@@ -454,8 +453,6 @@ input[type=text], input[type=submit], input[type=button] {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 5px;
-  /* background-color: pink; */
-
 }
 
   .woman {

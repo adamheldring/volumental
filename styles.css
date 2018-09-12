@@ -169,7 +169,9 @@ h4 {
   "scanner scanner woman ."
   ". poster tablet tablet"
   ". . tablet tablet"
-  "map map map map"
+  "mapheader mapheader mapheader mapheader"
+  "mapbox mapbox mapbox mapbox"
+  "pressheader pressheader pressheader pressheader"
   "press press press press";
   grid-gap: 10px;
   padding: 0px;
@@ -217,8 +219,23 @@ h4 {
   height: 100%;
 }
 
-.map {
-  grid-area: map;
+.mapbox {
+  position: relative;
+  grid-area: mapbox;
+  height: 100px;
+}
+#map {
+  width: 100%;
+  height: 400px;
+  filter: grayscale(1);
+}
+.mapheader {
+  grid-area: mapheader;
+  /* background: green; */
+}
+
+.pressheader {
+  grid-area: pressheader;
 }
 
 .press {
@@ -258,7 +275,7 @@ h4 {
   margin: 15px;
 }
 
-input[type=text], input[type=submit] {
+input[type=text], input[type=submit], input[type=button] {
     width: 160px;
     padding: 12px 20px;
     margin: 8px 10px;
@@ -273,6 +290,7 @@ input[type=text], input[type=submit] {
     padding: 10px;
     background-color: white;
     text-align: left;
+    outline: none;
 }
 
 #form {
@@ -296,7 +314,8 @@ input[type=text], input[type=submit] {
     "info info"
     "scanner woman"
     "poster tablet"
-    "map map"
+    "mapheader mapheader"
+    "mapbox mapbox"
     "press press";
     grid-gap: 10px;
     padding: 0px;
@@ -323,12 +342,13 @@ input[type=text], input[type=submit] {
     grid-template-areas:
     "logo"
     "info"
+    "mapheader"
+    "mapbox"
+    "mapbox"
     "scanner"
-    "woman"
-    "poster"
+    /* "woman" */
+    /* "poster" */
     "tablet"
-    "map"
-    "map"
     "press"
     "press";
     grid-gap: 10px;
@@ -346,6 +366,7 @@ input[type=text], input[type=submit] {
     display: block;
     margin: 0px;
   }
+<<<<<<< HEAD
   .navbar li a {
     display: none;
 }
@@ -373,4 +394,12 @@ input[type=text], input[type=submit] {
   text-align: right;
   background-color: pink;
 }
+=======
+  .woman {
+    display: none;
+  }
+  .poster {
+    display: none;
+  }
+>>>>>>> d7ab7237879f9d6467967c5f12316f080d5b1d17
 }

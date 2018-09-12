@@ -242,6 +242,29 @@ h4 {
   grid-area: press;
 }
 
+ .quote {
+   text-align: left;
+   display: inline;
+   line-height: 2.5;
+ }
+
+.quote-open, .quote-close i {
+  font-size: 50px;
+  color: #ff858c;
+  display: inline;
+}
+
+.quote-open {
+  padding-right: 25px;
+  display: inline;
+}
+
+.quote-close {
+  text-align: right;
+  display: inline;
+  padding-top: 25px;
+}
+
 .footer a {
   text-decoration: none;
   color: black;

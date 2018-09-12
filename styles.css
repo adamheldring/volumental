@@ -95,6 +95,7 @@ p {
   letter-spacing: 1.6px;
   text-align: center;
   color: #333333;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -103,6 +104,7 @@ h3 {
   letter-spacing: 7px;
   text-align: center;
   color: #333333;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -110,6 +112,9 @@ h4 {
   font-weight: 600px;
   line-height: 30px;
   letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+
 }
 
 .icon {
@@ -242,6 +247,29 @@ h4 {
 
 .press {
   grid-area: press;
+}
+
+ .quote {
+   text-align: left;
+   display: inline;
+   line-height: 2.5;
+ }
+
+.quote-open, .quote-close i {
+  font-size: 50px;
+  color: #ff858c;
+  display: inline;
+}
+
+.quote-open {
+  padding-right: 25px;
+  display: inline;
+}
+
+.quote-close {
+  text-align: right;
+  display: inline;
+  padding-top: 25px;
 }
 
 .footer a {

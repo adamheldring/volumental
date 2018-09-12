@@ -223,7 +223,7 @@ a {
 
 .img-item {
   filter: grayscale(30%);
-  object-fit: cover
+  object-fit: cover;
 }
 
 .img-item img {
@@ -366,13 +366,13 @@ input[type=text], input[type=submit], input[type=button] {
     "poster tablet"
     "mapheader mapheader"
     "mapbox mapbox"
-    "pressheader" "pressheader"
+    "pressheader pressheader"
     "press press";
     grid-gap: 10px;
     padding: 0px;
     min-height: 0;
     min-width: 0;
-  }
+  }  
   .navbar {
     padding-left: 0px;
     padding-right: 15px;

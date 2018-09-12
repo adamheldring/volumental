@@ -1,21 +1,40 @@
 // LOTTE TEAM PROJEKT SCRIPT
+console.log("hello from outside window.onload");
 window.onload = function() {
 
+  //Mobile navbar popup variables
+  var hamburger = document.getElementById('hamburger')
+  var mobileNavbar = document.getElementById("navbar");
+
+  //Scroll effect variables
   var hero = document.getElementById('hero-image-container');
   var heroHeight = 812; //70px compensates for body TopMargin
   var scrollPosition;
 
+
+  //Scroll effect function
   function transformHero(e) {
     scrollPosition = document.scrollingElement.scrollTop;
     if (scrollPosition < heroHeight) {
       hero.style.opacity = 1 - (scrollPosition / heroHeight);
     }
   }
+
+  //Mobile navbar popuop function
+  function navbarFunction() {
+    if (mobileNavbar.className === "sticky navbar") {
+      mobileNavbar.className = "sticky navbar responsive"
+    } else {
+      mobileNavbar.className = "sticky navbar"
+    }
+  }
+
   document.addEventListener('scroll', transformHero) //runs transformhero on scroll
   window.addEventListener('resize', transformHero) //runs transfomrhero on resize
   transformHero(); //runs tranformhero on load and re-load
-}
 
+  hamburger.addEventListener("click", navbarFunction); //pops up fullscreen menu when clicking hamburger in mobile view
+}
 
 // ADDING GOOGLE MAP
 

@@ -89,12 +89,12 @@ html {
 p {
   font-size: 13px;
   font-weight: 300;
+  text-align: left;
   line-height: 1.5;
   word-spacing: 5px;
   letter-spacing: 1.6px;
-  text-align: center;
   color: #333333;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 h3 {
@@ -198,6 +198,11 @@ h4 {
   grid-area: info;
 }
 
+a {
+  color: black;
+  text-decoration: underline;
+}
+
 .scanner {
   grid-area: scanner;
 }
@@ -247,10 +252,19 @@ h4 {
   grid-area: press;
 }
 
- .quote {
+/* .press a {
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+} */
+
+.quote {
    text-align: left;
    display: inline;
    line-height: 2.5;
+   margin: 0px;
+   text-transform: uppercase;
  }
 
 .quote-open, .quote-close i {
@@ -268,6 +282,8 @@ h4 {
   text-align: right;
   display: inline;
   padding-top: 25px;
+  padding-left: 25px;
+  vertical-align: top;
 }
 
 .footer a {
@@ -277,7 +293,7 @@ h4 {
 
 .footer-section {
   border-top: solid 1px black;
-  margin: 0px;
+  margin-top: 20px;
   padding: 15px 0 0;
   height: 225px;
   /* clear: both; */
@@ -291,6 +307,10 @@ h4 {
   letter-spacing: 2.3px;
   text-align: center;
   display: block;
+}
+
+.footer-section p {
+  text-align: center;
 }
 
 .footer-section button {

@@ -94,6 +94,7 @@ p {
   letter-spacing: 1.6px;
   text-align: center;
   color: #333333;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -102,6 +103,7 @@ h3 {
   letter-spacing: 7px;
   text-align: center;
   color: #333333;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -109,6 +111,9 @@ h4 {
   font-weight: 600px;
   line-height: 30px;
   letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+
 }
 
 .icon {

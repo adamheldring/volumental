@@ -409,5 +409,6 @@ input[type=text], input[type=submit], input[type=button] {
   }
   .video-1 {
     width: 100%;
+    height: auto;
   }
 }

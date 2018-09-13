@@ -21,7 +21,6 @@ html {
   padding-top: 15px;
   padding-bottom: 20px;
 }
-
 .navbar li {
   float: right;
   display: block;
@@ -51,7 +50,9 @@ html {
 .navbar .icon {
   display: none;
 }
-
+.responsive {
+  display: block;
+}
 .sticky {
   position: fixed;
   top: 0;
@@ -89,12 +90,12 @@ html {
 p {
   font-size: 13px;
   font-weight: 300;
+  text-align: left;
   line-height: 1.5;
   word-spacing: 5px;
   letter-spacing: 1.6px;
-  text-align: center;
   color: #333333;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 h3 {
@@ -119,6 +120,7 @@ h4 {
 .icon {
   text-decoration: none;
   color: black;
+  margin-top: 16px;
 }
 
 /* .header {
@@ -198,6 +200,11 @@ h4 {
   grid-area: info;
 }
 
+a {
+  color: black;
+  text-decoration: underline;
+}
+
 .scanner {
   grid-area: scanner;
 }
@@ -216,7 +223,7 @@ h4 {
 
 .img-item {
   filter: grayscale(30%);
-  object-fit: cover
+  object-fit: cover;
 }
 
 .img-item img {
@@ -247,6 +254,40 @@ h4 {
   grid-area: press;
 }
 
+/* .press a {
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+} */
+
+.quote {
+   text-align: left;
+   display: inline;
+   line-height: 2.5;
+   margin: 0px;
+   text-transform: uppercase;
+ }
+
+.quote-open, .quote-close i {
+  font-size: 50px;
+  color: #ff858c;
+  display: inline;
+}
+
+.quote-open {
+  padding-right: 25px;
+  display: inline;
+}
+
+.quote-close {
+  text-align: right;
+  display: inline;
+  padding-top: 25px;
+  padding-left: 25px;
+  vertical-align: top;
+}
+
 .footer a {
   text-decoration: none;
   color: black;
@@ -254,7 +295,7 @@ h4 {
 
 .footer-section {
   border-top: solid 1px black;
-  margin: 0px;
+  margin-top: 20px;
   padding: 15px 0 0;
   height: 225px;
   /* clear: both; */
@@ -268,6 +309,10 @@ h4 {
   letter-spacing: 2.3px;
   text-align: center;
   display: block;
+}
+
+.footer-section p {
+  text-align: center;
 }
 
 .footer-section button {
@@ -321,13 +366,13 @@ input[type=text], input[type=submit], input[type=button] {
     "poster tablet"
     "mapheader mapheader"
     "mapbox mapbox"
-    "pressheader" "pressheader"
+    "pressheader pressheader"
     "press press";
     grid-gap: 10px;
     padding: 0px;
     min-height: 0;
     min-width: 0;
-  }
+  }  
   .navbar {
     padding-left: 0px;
     padding-right: 15px;
@@ -343,6 +388,10 @@ input[type=text], input[type=submit], input[type=button] {
 }
 
 @media screen and (max-width: 750px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
@@ -375,7 +424,8 @@ input[type=text], input[type=submit], input[type=button] {
     margin: 0px;
   }
   .navbar li a {
-    display: none;
+    display: block;
+    width: 100%;
 }
   .navbar a.icon {
     float: right;
@@ -395,12 +445,36 @@ input[type=text], input[type=submit], input[type=button] {
   right: 0;
   top: 0;
 }
-.navbar.responsive li {
-  /* float: none; */
-  display: block;
-  text-align: right;
-  background-color: pink;
+.navbar.responsive ul {
+  background: white;
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  margin: 0px;
+  top: 70px;
+  bottom: 0px;;
+  left: 0px;
+  right: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  z-index: 10;
 }
+.navbar li {
+  display: none;
+}
+.navbar.responsive li {
+  float: none;
+  display: block;
+  text-align: center;
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
   .woman {
     display: none;
   }

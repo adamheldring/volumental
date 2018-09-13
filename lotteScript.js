@@ -22,10 +22,10 @@ window.onload = function() {
 
   //Mobile navbar popuop function
   function navbarFunction() {
-    if (mobileNavbar.className === "sticky navbar") {
-      mobileNavbar.className = "sticky navbar responsive"
+    if (mobileNavbar.className === "navbar") {
+      mobileNavbar.className = "navbar responsive"
     } else {
-      mobileNavbar.className = "sticky navbar"
+      mobileNavbar.className = "navbar"
     }
   }
 

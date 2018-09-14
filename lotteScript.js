@@ -1,5 +1,4 @@
 // LOTTE TEAM PROJEKT SCRIPT
-console.log("hello from outside window.onload");
 window.onload = function() {
 
   //Mobile navbar popup variables

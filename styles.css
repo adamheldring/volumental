@@ -34,7 +34,7 @@ a {
   padding-right: 25px;
   padding-left: 30px;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.5;
   letter-spacing: 2.8px;
 }
@@ -248,6 +248,7 @@ h4 {
 
 .footer-section p {
   text-align: center;
+  font-weight: 700;
 }
 
 .footer-section button {

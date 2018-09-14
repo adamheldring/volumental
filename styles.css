@@ -91,7 +91,7 @@ p {
 
 h3 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 7px;
   text-align: center;
   color: rgb(51, 51, 51);
@@ -100,7 +100,7 @@ h3 {
 
 h4 {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 30px;
   letter-spacing: 5px;
   text-align: center;
@@ -169,7 +169,6 @@ h4 {
 
 .img-item img {
   width: 100%;
-  /* height: 100%; */
 }
 
 .mapbox {
@@ -197,32 +196,37 @@ h4 {
 }
 
 .quote {
-  text-align: left;
-  display: inline;
+  text-align: center;
   line-height: 2.5;
   margin: 0px;
   text-transform: uppercase;
+  display: inline-block;
+  width: 80%;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .quote-open, .quote-close i {
+  text-align: center;
   font-size: 50px;
-  color: #ff858c;
+  color: rgba(244, 133, 140);
+  display: inline-block;
+  width: 10%;
+  height: 66px;
   display: inline;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-.quote-open {
-  padding-right: 25px;
-  display: inline;
-}
-
 .quote-close {
-  text-align: right;
-  display: inline;
-  padding-top: 25px;
-  padding-left: 25px;
-  vertical-align: top;
+  position: relative;
+  top: 5px;
 }
-
+.after-quote p {
+  float:left;
+  clear: both;
+}
 .footer a {
   text-decoration: none;
   color: black;
